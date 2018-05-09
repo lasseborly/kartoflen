@@ -1,0 +1,40 @@
+<head>
+<title>Min side</title>
+<style>
+#overskrift{color:royalblue;}
+#billed{width:400; color:pink;}
+.undertekster{font-family:helvetica;}
+</style>
+</head>
+<h1 id="overskrift"class="undertekster"> <i>Mit navn er Hannah</i></h1>
+<I>Jeg er glad for agurk<I>
+<h1 class="undertekster">Og jeg er 10år gammel og elsker skiveskåret agurk<h1>
+<img id="billed" width="500" src="http://fitnessunivers.dk/wp-content/uploads/2016/06/kalorier-i-agurk-300x203.jpg" />
+
+<input type="number"/>
+<button id="start-knap">start</button>
+<div id="plus">+</div>
+<div id="udregning"></div>
+<div id="minus">-</div>
+
+<script>
+	console.log(10+30)
+	var calc = document.getElementById("udregning")
+	
+    var sum=0
+    calc.innerHTML=sum
+	var plus=document.getElementById("plus")
+	var minus=document.getElementById("minus")
+
+	plus.addEventListener("click", function() {
+	  sum=sum+1
+	  calc.innerHTML =sum	
+   })
+
+    minus.addEventListener("click",function(){
+    sum=sum-1
+    calc.innerHTML =sum
+   })
+
+
+</script>
